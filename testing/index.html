@@ -7,6 +7,9 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
+        *{
+            font-family: sans-serif;
+        }
         ul {
             list-style: none;
             padding-left: 0;
@@ -46,8 +49,17 @@
             color: #000000;
         }
         #back1{
-            width: 142px;
-            height: 67px;
+            width: 120px;
+        }
+        #logoheader{
+            font-size: 40px;
+        }
+        #logofooter{
+            margin-top: 50px;
+            font-size: 30px;
+        }
+        #kontakt{
+            margin-top: 70px;
         }
     </style>
 </head>
@@ -58,8 +70,8 @@
         <nav>
             <ul id="ul1">
                 <li class="list1"><a href=index.html>Hjem</a></li>
-                <li class="list1"><a href=correcting.html>Produkter</a></li>
-                <li class="list1"><input type="image" src="C:\Users\ioppp\downloads\exam_logo1.jpg" alt="Bilde" id="back1" style="max-width:100%;height:auto;"></li>
+                <li class="list1"><a href=product.html>Produkter</a></li>
+                <li class="list1"><h1 id="logoheader"><a href=index.html>Logo</a></h1></li>
                 <li class="list1"><a href=contact.html>Kategorier</a></li>
                 <li class="list1"><a href=oppskrift.html>Kontakt oss</a></li>
             </ul>
@@ -83,8 +95,10 @@
         </section>
     </aside>
     <footer>
-        <p>Kontakt meg på epost: <a href=mailto:adrianhm@hiof.no>Epost</a></p>
-        <h2>&copy; 2024 Adrian Heiberg Magnussen</h2>
+        <h2 id="logofooter">Logo</h2>
+        <p>Donec eros velit suscipit non iaculis hendrerit laoreet fringilla est.</p>
+        <h3 id="kontakt">Kontakt</h3>
+        <h3>&copy; 2024 Adrian Heiberg Magnussen</h2>
     </footer>
 </body>
 </html>
