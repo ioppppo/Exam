@@ -2,9 +2,15 @@
 <html lang="en">
 <head>
     <meta charset=utf-8>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nettside mal</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <style>
+        ul {
+            list-style: none;
+            padding-left: 0;
+        }
         li {
             list-style-type: none;
         }
@@ -13,10 +19,15 @@
             color: #000000;
         }
         li.list1 {
-            margin: 20px;
+            margin-top: 20px;
             width: 100%;
             position: relative;
-            left: -45px;
+        }
+        button.icons1 {
+            margin-top: 10px;
+            border: none;
+            background-color: #ffffff;
+            color: #000000;
         }
         #searchi1{
             border: solid;
@@ -27,12 +38,12 @@
             border: solid;
             border-color: #000000;
             padding: 15px;
-            background-color: #00ffff;
-            color: #ffffff;
+            background-color: #ffffff;
+            color: #000000;
         }
         #searchb1:hover{
-            background-color: #0000ff;
-            color: #ffffff;
+            background-color: #e0e0e0;
+            color: #000000;
         }
         #back1{
             width: 142px;
@@ -48,11 +59,16 @@
             <ul id="ul1">
                 <li class="list1"><a href=index.html>Hjem</a></li>
                 <li class="list1"><a href=correcting.html>Produkter</a></li>
-                <li class="list1"><input type="image" src="C:\Users\ioppp\downloads\exam_logo1.jpg" alt="Bilde" id="back1"></li>
+                <li class="list1"><input type="image" src="C:\Users\ioppp\downloads\exam_logo1.jpg" alt="Bilde" id="back1" style="max-width:100%;height:auto;"></li>
                 <li class="list1"><a href=contact.html>Kategorier</a></li>
                 <li class="list1"><a href=oppskrift.html>Kontakt oss</a></li>
             </ul>
         </nav>
+        <button type="submit" class="icons1"><i class="material-icons" style="font-size: 24px;">&#xe7ff</i></button>
+        <br>
+        <button type="submit" class="icons1"><i class="fa fa-heart-o" style="font-size: 24px;"></i></button>
+        <br>
+        <button type="submit" class="icons1"><i class="material-icons" style="font-size: 24px;">&#xe8cc</i></button>
     </header>
     <main>
         <section>
