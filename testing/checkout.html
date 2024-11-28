@@ -16,16 +16,25 @@
         }
         input.finput {
             padding: 10px;
+            width: 95%;
+        }
+        input.f2input {
+            margin-top: 20px;
         }
         #send1 {
             color: #ffffff;
             background-color: #505050;
             border-color: #a0a0a0;
+            width: 80px;
         }
         #send2 {
             color: #ffffff;
             background-color: #505050;
             border-color: #a0a0a0;
+            width: 100px;
+        }
+        section.checkoutsec {
+            margin-top: 40px;
         }
     </style>
 </head>
@@ -34,7 +43,7 @@
     </header>
     <main>
         <h1>Kasse</h1>
-        <section>
+        <section class="checkoutsec">
             <h2>1. SHOPPINGBAGEN DIN</h2>
             <section class="checks1section">
                 <img src="https://picsum.photos/337" style="width:100%">
@@ -49,7 +58,7 @@
                 <p>Farge: beige</p>
             </section>
         </section>
-        <section>
+        <section class="checkoutsec">
             <h2>2. DINE OPPLYSNINGER</h2>
             <label for="form1">Leveringsadresse</label>
             <form id="form1">
@@ -73,26 +82,28 @@
                 </section>
             </form>
         </section>
-        <section>
+        <section class="checkoutsec">
             <h2>3. LEVERING</h2>
-            <form>
+            <label for="form2">LEVERINGSVALG</label>
+            <form id="form2">
                 <section class="fsection">
+                    <input type="radio" name="levering" id="ehjem" value="ehjem" class="f2input" required>
                     <label for="ehjem">Ekspress Hjemlevering</label>
-                    <input type="radio" name="levering" id="ehje" value="ehjem" required>
                 </section>
                 <section class="fsection">
-                    <label for="kjonn2">Ekspress Pakke til utlevering</label>
-                    <input type="radio" name="levering" id="eut" value="eut" required>
+                    <input type="radio" name="levering" id="eut" value="eut" class="f2input" required>
+                    <label for="eut">Ekspress Pakke til utlevering</label>
                 </section>
                 <section class="fsection">
+                    <input type="radio" name="levering" id="stand" value="stand" class="f2input" required>
                     <label for="stand">Standard Hjemlevering</label>
-                    <input type="radio" name="levering" id="stand" value="stand" required>
                 </section>
             </form>
         </section>
-        <section>
+        <section class="checkoutsec">
             <h2>4. BETALING</h2>
-            <form>
+            <label for="form3">BETAL MED KORT</label>
+            <form id="form3">
                 <section class="fsection">
                     <label for="card">Kortnummer</label>
                     <br>
@@ -109,7 +120,15 @@
                     <input type="number" name="cvc1" id="cvc" class = "finput" placeholder="CVC/CVV" min="0" required>
                 </section>
                 <section class="fsection">
+                    <label for="send2">Å betale inkl. mva.</label>
+                    <br>
+                    <label for="send2">1199 kr</label>
+                    <br>
                     <input type="submit" name="send2" id="send2" class = "finput" value="Fullfør kjøp" required>
+                </section>
+                <section>
+                    <p>Du bekrefter herved at opplysningene og dokumentene du har oppgitt er korrekte og fullstendige. Leverandøren forbeholder seg retten til å heve eller avslutte avtaleforholdet dersom det foreligger uriktige eller ufullstendige opplysninger.</p>
+                </section>
                 <section class="fsection">
                     <input type="checkbox" name="vilk" id="vilk1" value="vilk1" required>
                     <label for="personvern">Ja, jeg godtar vilkårene.</label>
