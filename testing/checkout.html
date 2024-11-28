@@ -34,13 +34,49 @@
             </section>
         </section>
         <section>
-            
+            <h2>2. DINE OPPLYSNINGER</h2>
+            <form>
+                <label for="fnavn">Fornavn:</label>
+                <input type="text" name="navnf" id="navnf" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                <br>
+                <label for="enavn">Etternavn:</label>
+                <input type="text" name="navne" id="navne" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                <br>
+                <label for="alder">Alder:</label>
+                <input type="number" name="alder1" id="alder" min="18" max="99" required>
+                <br>
+                <label for="send">Send-knapp:</label>
+                <input type="submit" name="send1" id="send" value="Lagre" required>
+            </form>
         </section>
         <section>
-            
+            <h2>3. LEVERING</h2>
+            <form>
+                <label for="kjonn1">Mann:</label>
+                <input type="radio" name="kjonnid" id="kjonn1" value="mann" required>
+                <br>
+                <label for="kjonn2">Kvinne:</label>
+                <input type="radio" name="kjonnid" id="kjonn2" value="kvinne" required>
+                <br>
+                <label for="kjonn3">Annet:</label>
+                <input type="radio" name="kjonnid" id="kjonn3" value="annet" required>
+            </form>
         </section>
         <section>
-            
+            <h2>4. BETALING</h2>
+            <form>
+                <label for="fdato">Fødselsdato:</label>
+                <input type="date" name="fdato1" id="fdato" required>
+                <br>
+                <input type="submit" name="send2" id="send2" value="Fullfør kjøp" required>
+                <br>
+                <label for="personvern">Ja, jeg godtar vilkårene.</label>
+                <input type="checkbox" name="vilk" id="vilk1" value="vilk1" required>
+                <br>
+                <label for="personvern">Ja takk! Send nyhetsbrev til meg.:</label>
+                <input type="checkbox" name="nyhet" id="nyhet1" value="nyhet1">
+                <br>
+            </form>
         </section>
     </main>
     <footer>
