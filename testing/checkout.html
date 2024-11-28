@@ -37,13 +37,19 @@
             <h2>2. DINE OPPLYSNINGER</h2>
             <form>
                 <label for="fnavn">Fornavn:</label>
-                <input type="text" name="navnf" id="navnf" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                <input type="text" name="fnavn1" id="fnavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
                 <br>
                 <label for="enavn">Etternavn:</label>
-                <input type="text" name="navne" id="navne" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                <input type="text" name="enavn1" id="enavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
                 <br>
-                <label for="alder">Alder:</label>
-                <input type="number" name="alder1" id="alder" min="18" max="99" required>
+                <label for="gate">Gateadresse:</label>
+                <input type="text" name="gate1" id="gate" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                <br>
+                <label for="postn">Postnummer:</label>
+                <input type="number" name="postn1" id="postn" required>
+                <br>
+                <label for="posts">Poststed:</label>
+                <input type="text" name="posts1" id="posts" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
                 <br>
                 <label for="send">Send-knapp:</label>
                 <input type="submit" name="send1" id="send" value="Lagre" required>
