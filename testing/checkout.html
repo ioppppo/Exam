@@ -11,6 +11,22 @@
         section.checks1section {
             width: 100%;
         }
+        section.fsection {
+            margin-top: 10px;
+        }
+        input.finput {
+            padding: 10px;
+        }
+        #send1 {
+            color: #ffffff;
+            background-color: #505050;
+            border-color: #a0a0a0;
+        }
+        #send2 {
+            color: #ffffff;
+            background-color: #505050;
+            border-color: #a0a0a0;
+        }
     </style>
 </head>
 <body id="checkoutbody">
@@ -35,53 +51,73 @@
         </section>
         <section>
             <h2>2. DINE OPPLYSNINGER</h2>
-            <form>
-                <label for="fnavn">Fornavn:</label>
-                <input type="text" name="fnavn1" id="fnavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
-                <br>
-                <label for="enavn">Etternavn:</label>
-                <input type="text" name="enavn1" id="enavn" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
-                <br>
-                <label for="gate">Gateadresse:</label>
-                <input type="text" name="gate1" id="gate" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
-                <br>
-                <label for="postn">Postnummer:</label>
-                <input type="number" name="postn1" id="postn" required>
-                <br>
-                <label for="posts">Poststed:</label>
-                <input type="text" name="posts1" id="posts" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
-                <br>
-                <label for="send">Send-knapp:</label>
-                <input type="submit" name="send1" id="send" value="Lagre" required>
+            <label for="form1">Leveringsadresse</label>
+            <form id="form1">
+                <section class="fsection">
+                    <input type="text" name="fnavn1" id="fnavn" class = "finput" placeholder="Fornavn*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </section>
+                <section class="fsection">
+                    <input type="text" name="enavn1" id="enavn" class = "finput" placeholder="Etternavn*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </section>
+                <section class="fsection">
+                    <input type="text" name="gate1" id="gate" class = "finput" placeholder="Gateadresse*" required>
+                </section>
+                <section class="fsection">
+                    <input type="number" name="postn1" id="postn" class = "finput" placeholder="Postnummer*" min="0" required>
+                </section>
+                <section class="fsection">
+                    <input type="text" name="posts1" id="posts" class = "finput" placeholder="Poststed*" pattern="[A-Za-zæøåÆØÅ ]{2,}" required>
+                </section>
+                <section class="fsection">
+                    <input type="submit" name="send1" id="send1" class = "finput" value="Lagre" required>
+                </section>
             </form>
         </section>
         <section>
             <h2>3. LEVERING</h2>
             <form>
-                <label for="kjonn1">Mann:</label>
-                <input type="radio" name="kjonnid" id="kjonn1" value="mann" required>
-                <br>
-                <label for="kjonn2">Kvinne:</label>
-                <input type="radio" name="kjonnid" id="kjonn2" value="kvinne" required>
-                <br>
-                <label for="kjonn3">Annet:</label>
-                <input type="radio" name="kjonnid" id="kjonn3" value="annet" required>
+                <section class="fsection">
+                    <label for="ehjem">Ekspress Hjemlevering</label>
+                    <input type="radio" name="levering" id="ehje" value="ehjem" required>
+                </section>
+                <section class="fsection">
+                    <label for="kjonn2">Ekspress Pakke til utlevering</label>
+                    <input type="radio" name="levering" id="eut" value="eut" required>
+                </section>
+                <section class="fsection">
+                    <label for="stand">Standard Hjemlevering</label>
+                    <input type="radio" name="levering" id="stand" value="stand" required>
+                </section>
             </form>
         </section>
         <section>
             <h2>4. BETALING</h2>
             <form>
-                <label for="fdato">Fødselsdato:</label>
-                <input type="date" name="fdato1" id="fdato" required>
-                <br>
-                <input type="submit" name="send2" id="send2" value="Fullfør kjøp" required>
-                <br>
-                <label for="personvern">Ja, jeg godtar vilkårene.</label>
-                <input type="checkbox" name="vilk" id="vilk1" value="vilk1" required>
-                <br>
-                <label for="personvern">Ja takk! Send nyhetsbrev til meg.:</label>
-                <input type="checkbox" name="nyhet" id="nyhet1" value="nyhet1">
-                <br>
+                <section class="fsection">
+                    <label for="card">Kortnummer</label>
+                    <br>
+                    <input type="number" name="card1" id="card" class = "finput" placeholder="342342****4435" min="0" required>
+                </section>
+                <section class="fsection">
+                    <label for="fdato">Utløpsdato</label>
+                    <br>
+                    <input type="date" name="fdato1" id="fdato" class = "finput" required>
+                </section>
+                <section class="fsection">
+                    <label for="cvc">CVC/CVV</label>
+                    <br>
+                    <input type="number" name="cvc1" id="cvc" class = "finput" placeholder="CVC/CVV" min="0" required>
+                </section>
+                <section class="fsection">
+                    <input type="submit" name="send2" id="send2" class = "finput" value="Fullfør kjøp" required>
+                <section class="fsection">
+                    <input type="checkbox" name="vilk" id="vilk1" value="vilk1" required>
+                    <label for="personvern">Ja, jeg godtar vilkårene.</label>
+                </section>
+                <section class="fsection">
+                    <input type="checkbox" name="nyhet" id="nyhet1" value="nyhet1">
+                    <label for="personvern">Ja takk! Send nyhetsbrev til meg.</label>
+                </section>
             </form>
         </section>
     </main>
