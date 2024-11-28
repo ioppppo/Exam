@@ -3,51 +3,29 @@
 <head>
     <meta charset=utf-8>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nettside mal</title>
-    <style>
-        #checkoutbody {
-            text-align: left;
-        }
-        section.checks1section {
-            width: 100%;
-        }
-        section.fsection {
-            margin-top: 10px;
-        }
-        input.finput {
-            padding: 10px;
-            width: 95%;
-        }
-        input.f2input {
-            margin-top: 20px;
-            padding: 10px;
-        }
-        #send1 {
-            color: #ffffff;
-            background-color: #505050;
-            border-color: #a0a0a0;
-            width: 80px;
-        }
-        #send2 {
-            color: #ffffff;
-            background-color: #505050;
-            border-color: #a0a0a0;
-            width: 100px;
-        }
-        section.checkoutsec {
-            margin-top: 40px;
-        }
-        #avbryt {
-            text-decoration: underline;
-            background-color: transparent;
-            color: #0000ff;
-            border-style: none;
-            padding: 10px;
-        }
-    </style>
+    <title>checkout.html</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+    <link rel="stylesheet" href="eksamen.css">
 </head>
 <body id="checkoutbody">
     <header>
+        <input type="text" placeholder="søk her" id="searchi1">
+        <button type="submit" id="searchb1"><i class="fa fa-search"></i></button>
+        <nav>
+            <ul id="ul1">
+                <li class="list1"><a href=index.html>Hjem</a></li>
+                <li class="list1"><a href=product.html>Produkter</a></li>
+                <li class="list1"><h1 id="logoheader"><a href=index.html>Logo</a></h1></li>
+                <li class="list1"><a href=contact.html>Kategorier</a></li>
+                <li class="list1"><a href=oppskrift.html>Kontakt oss</a></li>
+            </ul>
+        </nav>
+        <button type="submit" class="icons1"><i class="material-icons" style="font-size: 24px;">&#xe7ff</i></button>
+        <br>
+        <button type="submit" class="icons1"><i class="fa fa-heart-o" style="font-size: 24px;"></i></button>
+        <br>
+        <button type="submit" class="icons1"><i class="material-icons" style="font-size: 24px;">&#xe8cc</i></button>
     </header>
     <main>
         <h1>Kasse</h1>
@@ -150,8 +128,33 @@
                 </section>
             </form>
         </section>
+        <br>
     </main>
     <footer>
+        <section>
+            <h2 id="logofooter">Logo</h2>
+            <p>Donec eros velit suscipit non iaculis hendrerit laoreet fringilla est.</p>
+        </section>
+        <section>
+            <h3>KONTAKT</h3>
+            <p><i class="material-icons" style="font-size: 24px;">&#xe0c8</i> Addresse: B R A Veien 4, 1757 Halden</p>
+            <p><i class="material-icons" style="font-size: 24px;">&#xe0cd</i> 69 60 80 00</p>
+            <p><i class="material-icons" style="font-size: 24px;">&#xe0be</i> halden@hiof.no</p>
+            <p id="closetime"><i class="fa fa-clock-o" style="font-size: 24px;"></i> Stenger 15:00</p>
+        </section>
+        <section>
+            <h3>SNARVEIER</h3>
+            <p><a>Produkter</a></p>
+            <p><a>Kategorier</a></p>
+            <p><a>Kontakt oss</a></p>
+        </section>
+        <section>
+            <h3>SOSIALE MEDIER</h3>
+            <p class="iconsapps"><a href="https://www.instagram.com/"><i class="fa fa-instagram" style="font-size: 24px;"></i></a></p>
+            <p class="iconsapps"><a href="https://nb-no.facebook.com/"><i class="fa fa-facebook-official" style="font-size: 24px;"></i></a></p>
+            <p class="iconsapps"><a href="https://www.linkedin.com/"><i class="fa fa-linkedin-square" style="font-size: 24px;"></i></a></p>
+            <p class="iconsapps"><a href="https://www.pinterest.com/"><i class="fa fa-pinterest" style="font-size: 24px;"></i></a></p>
+        </section>
     </footer>
 </body>
 </html>
